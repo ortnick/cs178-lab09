@@ -9,7 +9,7 @@ from boto3.dynamodb.conditions import Key
 # Configuration — update REGION if your table is elsewhere
 # -------------------------------------------------------
 REGION = "us-east-1"
-TABLE_NAME = "Songs"
+TABLE_NAME = "Music"
 
 
 def get_table():
