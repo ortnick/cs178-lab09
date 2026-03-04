@@ -62,7 +62,7 @@ def get_movie_by_title():
         print("not found.")
         return
 
-    print_movie(movies)
+    print_movie(movies[0])
 
 def main():
     print("===== Reading from DynamoDB =====\n")
