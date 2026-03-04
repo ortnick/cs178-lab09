@@ -56,19 +56,19 @@ def get_movie_by_title():
         FilterExpression=Key("Title").eq(title)
     )
 
-    movie_title = response.get("Item", [])
-    print
-    if not movie_title:
+    movies = response.get("Items", [])
+    
+    if not movies:
         print("not found.")
         return
 
-    print("movie found")
-    print_movie(movie_title)
+    print_movie(movies)
 
 def main():
     print("===== Reading from DynamoDB =====\n")
     print_all_movies()
-
+    print("===== Search for a Movie =====\n")
+    get_movie_by_title()
 
 if __name__ == "__main__":
     main()
