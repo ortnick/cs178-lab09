@@ -19,10 +19,10 @@ def get_table():
 
 
 def print_song(song):
-    song = song.get("Song", "Unknown Song")
+    song_name = song.get("Song", "Unknown Song")
     artist = song.get("Artist", "Unknown Artist")
     genre = song.get("Genre", "Unknown Genre")
-    print(f"  Song  : {song}")
+    print(f"  Song  : {song_name}")
     print(f"  Artist   : {artist}")
     print(f"  Genre: {genre}")
     print()
